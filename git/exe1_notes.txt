@@ -1,0 +1,7 @@
+cd exercise1
+source setup.sh
+git branch
+git log --oneline --graph --all
+git rebase -i master~5
+
+# reword, pick, squash

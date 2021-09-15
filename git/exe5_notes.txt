@@ -1,0 +1,7 @@
+cd exercise5
+source setup.sh
+git branch
+git branch the-beginning #COMMIT_ID#
+git reflog
+git show-ref --tags
+git branch dangling #COMMIT_ID#

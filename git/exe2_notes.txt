@@ -1,0 +1,12 @@
+cd exercise2
+source setup.sh
+git branch
+git checkout feature
+git rebase master
+
+# solve conflicts
+
+git add myapp.txt
+git rebase --continue
+git checkout master
+git reset --hard HEAD~1

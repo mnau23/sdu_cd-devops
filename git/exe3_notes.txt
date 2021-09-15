@@ -1,0 +1,7 @@
+cd exercise3
+source setup.sh
+git branch
+git checkout feature
+git rebase master
+git checkout master
+git rebase feature

@@ -1,0 +1,10 @@
+cd exercise4
+source setup.sh
+git branch
+git status
+git reset HEAD --hard .
+git restore .
+git reset --hard #COMMIT_ID#
+nano .gitignore
+git add .
+git commit -m 'Add bfile.txt'
