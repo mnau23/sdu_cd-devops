@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-a
+  labels:
+    app: deployment-a
+spec:
+  selector:
+    matchLabels:
+      app: deployment-a
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: deployment-a
+    spec:
+      containers:
+      - name: devopsacademya
+        image: eficodeacademy/devopsacademya:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
